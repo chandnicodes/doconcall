@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocsOnCall Homepage| Online Consultation</title>
+    <!-- font-link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- other links  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- custom-css-link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="site_wrapper">
+        <section class="header-wrapper">
+            <header>
+                <div class="container">
+                    <div class="inner-wrapper">
+                        <div class="logo"><a href="#">DocOnCall</a></div>
+                        <nav class="top_nav">
+                            <ul class="nav-list">
+                                <li class="nav-list-item"><a href="#appointment-W">Consultation</a></li>
+                                <li class="nav-list-item"><a href="#special-w">Specialist</a></li>
+                            </ul>
+                        </nav>
+                        <div class="login_btn" title="Login with PhoneNumber" onclick="showloginbox()">
+                            <p><a href="#"><span><i aria-hidden="true" class="fa fa-user"></i></span>Login</a></p>
+                        </div>
+                    </div>
+                    <!-- login with phonenumber  -->
+                    <div class="login-top">
+                        <div class="img">
+                            <img src="images/online-consult.jpg" alt="Consult">
+                        </div>
+                        <div class="form">
+                            <h4>Welcome!! <span>Sign in to continue</span></h4>
+                            <form>
+                                <input type="number" placeholder="Enter Mobile Number" id="f-input" />
+                                <input type="number" placeholder="Enter OTP" id="otp"/>
+
+                                <button id="continue">Continue</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="banner">
+                <div class="banner-content">
+                    <div class="container">
+                        <div class="banner-inner-wrapper">
+                            <div class="heading">
+                                <h1>Talk to Specialist Doctors online on Private chat</h1>
+                                <p>Consult Doctors from Top Hospitals within 30 minutes</p>
+                            </div>
+                            <div class="user-choice">
+                                <input type="text" placeholder="City" />
+                                <input type="text"  placeholder="Location"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="appointment-wrapper" id="appointment-W">
+            <div class="appointment">
+                <div class="container">
+                    <div class="inner-wrapper">
+                        <div class="book-appoint" onclick="showappointnbox()" title="click me">
+                            <div class="icons">
+                                <img src="images/booking.png" alt="booking">
+                            </div>
+                            <h4><a href="#">Book Appointments</a></h4>
+                        </div>
+                        <div class="book-appoint">
+                            <div class="icons">
+                                <img src="images/consulting.png" alt="consulting">
+                            </div>
+                            <h4><a href="#">Online Consultation</a></h4>
+                        </div>
+                        <div class="book-appoint">
+                            <div class="icons">
+                                <img src="images/doctor.png" alt="doctor">
+                            </div>
+                            <h4><a href="#">Doctor's 24*7</a></h4>
+                        </div>
+                        <div class="book-appoint">
+                            <div class="icons">
+                                <img src="images/fast.png" alt="fast">
+                            </div>
+                            <h4><a href="#">Fastest Response</a></h4>
+                        </div>
+                    </div>
+                    <!-- appointment popup-->
+                    <div class="appointment-popup">
+                        <div class="doc-details">
+                            <div class="doc-img">
+                                <img src="images/doc-img.png" />
+                            </div>
+                            <div class="doc-info">
+                                <h5>Dr. Santosh Sharma</h5>
+                                <p>MGM Healthcare,ckam Road,
+                                    Delhi</p>
+                                <p>Neurosurgeon</p>
+                            </div>
+                        </div>
+                        <h6>Book Appointment</h6>
+                        <form id="login" onsubmit="process(event)">
+                            <div class="names">
+                                <label for="fullname">Patient Name:</label>
+                                <input type="text" name="fullname" placeholder="Patient Name" id="fullname" />
+                            </div>
+                            <div class="names">
+                                <label for="hone">Contact Number:</label>
+                                <input type="tel" name="phone" placeholder="Contact Number" id="phone" />
+                            </div>
+                            <div class="names">
+                                <label for="dob">Date of Birth:</label>
+                                <input type="text" name="D.O.B" placeholder="Patient D.O.B" id="dob" />
+                            </div>
+                            <input type="submit" class="btn" value="Confirm & Process" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="Specialist-wrapper" id="special-w">
+            <div class="Specialist">
+                <div class="container">
+                    <div class="inner-wrapper">
+                        <div class="special">
+                            <img src="images/doc1.jpg" alt="doc1">
+                            <p>Physician</p>
+                        </div>
+                        <div class="special">
+                            <img src="images/doc2.jpg" alt="doc2">
+                            <p>Gastroenterologist</p>
+                        </div>
+                        <div class="special">
+                            <img src="images/doc3.jpg" alt="doc3">
+                            <p>General Sergeon</p>
+                        </div>
+
+                        <div class="special">
+                            <img src="images/doc4.jpg" alt="doc4">
+                            <p>Orthopedist</p>
+                        </div>
+                        <div class="special">
+                            <img src="images/doc5.jpg" alt="doc5">
+                            <p>Pediatrician</p>
+                        </div>
+                        <div class="special">
+                            <img src="images/doc6.png" alt="doc6">
+                            <p>Gynecologist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="inner-wrapper">
+                    <ul class="footer-nav-list">
+                        <li class="f-nav-item f1"><a href="#">DocOnCall</a></li>
+                        <li class="f-nav-item"><a href="#">About us</a></li>
+                        <li class="f-nav-item"><a href="#">Reviews</a></li>
+                        <li class="f-nav-item"><a href="#">FAQ</a></li>
+                    </ul>
+                    <ul class="footer-nav-list">
+                        <li class="f-nav-item f1"><a href="#">Service by City</a></li>
+                        <li class="f-nav-item"><a href="#">Delhi</a></li>
+                        <li class="f-nav-item"><a href="#">Jaipur</a></li>
+                        <li class="f-nav-item"><a href="#">Pune</a></li>
+                    </ul>
+                    <ul class="footer-nav-list">
+                        <li class="f-nav-item f1"><a href="#">For Patients</a></li>
+                        <li class="f-nav-item"><a href="#">Health Blog</a></li>
+                        <li class="f-nav-item"><a href="#">Lab Test</a></li>
+                        <li class="f-nav-item"><a href="#">Read About Medicine</a></li>
+                    </ul>
+                    <ul class="footer-nav-list">
+                        <li class="f-nav-item f1"><a href="#">Common Questions</a></li>
+                        <li class="f-nav-item"><a href="#">Dermetology</a></li>
+                        <li class="f-nav-item"><a href="#">Cardiology</a></li>
+                        <li class="f-nav-item"><a href="#">ENT Special</a></li>
+                    </ul>
+                    <ul class="footer-nav-list">
+                        <li class="f-nav-item f1"><a href="#">Social</a></li>
+                        <li class="f-nav-item"><a href="#">Facebook</a></li>
+                        <li class="f-nav-item"><a href="#">Twitter</a></li>
+                        <li class="f-nav-item"><a href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- modals -->
+
+    </div>
+    <script>
+        const phoneInputField = document.querySelector("#phone");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
