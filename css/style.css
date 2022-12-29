@@ -241,8 +241,8 @@ footer {
   background: var(--white);
   margin: auto;
   position: fixed;
-  top: 45px;
-  right: 130px;
+  top: 55px;
+  right: 0;
 }
 .img {
   width: 200px;
@@ -272,7 +272,7 @@ footer {
   color: #535353;
 }
 /* appointment */
-.appointment-popup{
+.appointment-popup {
   width: fit-content;
   padding: 0 16px;
   max-width: 100%;
@@ -286,8 +286,8 @@ footer {
   gap: 20px;
   background: white;
   position: fixed;
-  top: 35%;
-  left: 28%;
+  top: 100px;
+  left: 150px;
 }
 .doc-details {
   display: flex;
@@ -320,7 +320,7 @@ footer {
   padding-bottom: 4px;
   font-size: 14px;
 }
-.names{
+.names {
   width: 234px;
 }
 #dob,
@@ -329,7 +329,7 @@ footer {
   font-size: 14px;
   width: inherit;
 }
-#phone{
+#phone {
   font-size: 14px;
   padding: 6px 6px 6px 50px;
 }
@@ -373,5 +373,21 @@ footer {
   .book-appoint {
     min-width: 130px;
     padding: 24px 2px;
+  }
+  .appointment-popup {
+    top: 55px;
+    left: 0;
+  }
+  .special img {
+    width: 160px;
+    height: 190px;
+  }
+}
+@media (max-width: 380px) {
+  .special img {
+    width: 100%;
+  }
+  .footer-nav-list{
+  width: 100%;
   }
 }
