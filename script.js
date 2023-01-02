@@ -4,7 +4,7 @@ const firstInp = document.querySelector("#f-input");
 myotp.style.display = "none";
 
 function validateInput() {
-  if (firstInp.value < 10) {
+  if (firstInp.value <= 10 ) {
     continBtn.style.display = "none";
   } else {
     continBtn.style.display = "block";
