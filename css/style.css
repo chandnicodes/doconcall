@@ -409,8 +409,12 @@ footer {
     top: 55px;
     left: 0;
   }
+  .special{
+    min-width:190px;
+    width:48%;
+  }
   .special img {
-    width: 160px;
+    width: 100%;
     height: 190px;
   }
 }
@@ -418,6 +422,9 @@ footer {
   .book-appoint {
     min-width: 80%;
     margin: 0 auto;
+  }
+  special{
+    width:100%;
   }
   .special img {
     width: 100%;
