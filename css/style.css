@@ -177,8 +177,7 @@ section {
   padding: 50px 0;
 }
 .special {
-  width:48%;
-  min-width:190px;
+  width:200px;
   background: white;
   border-radius: 3px;
   box-shadow: 1px 3px 10px #40a4fc;
