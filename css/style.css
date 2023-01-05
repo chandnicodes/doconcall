@@ -422,7 +422,7 @@ footer {
     min-width: 80%;
     margin: 0 auto;
   }
-  special{
+  .special{
     width:100%;
   }
   .special img {
